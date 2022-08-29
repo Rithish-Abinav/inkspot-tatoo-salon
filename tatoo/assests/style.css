@@ -1,0 +1,1521 @@
+@font-face {
+    font-family: medium;
+    src: url(fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family:regular ;
+    src: url(fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: bold;
+    src: url(fonts/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: semibold;
+    src: url(fonts/Poppins/Poppins-SemiBold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    cursor: url(cursor/icons8-tattoo-machine-100\ copy.png) ,auto;
+}
+::selection{
+    background-color: black;
+    color:#e42023;
+}
+
+main{
+
+margin: auto;
+    background-color: #302f2f;
+  
+}
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+position: fixed;
+    z-index: 2;
+   top: 0;
+}
+.logo{
+  margin-left: 40px;
+  width: fit-content;
+}
+.logo h1{
+    color: #e42023;
+    font-family: semibold;
+    width: fit-content;
+}
+.menubar{
+    display: none;
+
+}
+.header .navbar{
+width: 45%;
+margin-right: 40px;
+}
+.header .navbar ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    list-style-type: none;
+}
+.header .navbar ul li a{
+    color: white;
+    font-family: medium;
+    text-decoration: none;
+}
+.header .navbar ul li a:hover{
+    color: #e42023;
+}
+.banner{
+    background-image: url(images/bannerbg.jpg);
+    width: 100%;
+    margin-top: 70px;
+    height: 550px;
+    background-size: cover;
+    position: relative;
+}
+.banner h1{
+    color: #e42023;
+    font-family: semibold;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    font-size: 80px;
+}
+.banner p{
+    color: white;
+    font-family: medium;
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    font-size: 49px;
+    text-transform: uppercase;
+}
+.banner .button{
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    top: 300px;
+    left: 180px;
+    z-index: 1;
+}
+.banner .button-back{
+    width: 100px;
+    height: 50px;
+    background-color: #e42023;
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    transition: all;
+    transition-duration: 0.3s;
+    box-shadow: 2px 2px 2px #1c1c1c;
+    border-radius: 3px;
+}
+.banner a{
+    font-family: regular;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    top: 300px;
+    left: 230px;
+}
+.banner .button:hover~.button-back
+{
+    width: 210px;
+}
+.about{
+    width: 95%;
+    margin: auto;
+    height: 350px;
+    display: flex;
+    padding-top: 20px;
+}
+.about .about-left{
+    width: 45%;
+    height: 100%;
+
+    overflow: hidden;
+}
+.about .about-right{
+    width: 55%;
+    height: 100%;
+ margin-left: 50px;
+}
+.about .about-left h1{
+    font-family: semibold;
+    color: white;
+    margin: 10px 30px;
+}
+.about .about-left .image{
+    width: 100%;
+    height: 100%;
+ 
+   display: flex;
+   justify-content: space-between;
+}
+.about .about-left .image .image1{
+    width: 48%;
+    height: 100%;
+    background-color: #1c1c1c;
+}
+.about .about-left .image .image2{
+    width: 48%;
+    height: 100%;
+    background-color: #1c1c1c;
+}
+.about .about-left .image .image2 img{
+margin-left: -90px;
+}
+.about .about-right p:nth-of-type(1){
+    margin: 70px 0px 20px 0px;
+    font-family: medium;
+    opacity: 100%;
+    color: white;
+}
+.about .about-right p{
+    font-family: medium;
+    opacity: 80%;
+    color: white;
+}
+.about .about-right .bar{
+    width: 60%;
+    height: 3px;
+    background-color: #e42023;
+    margin: auto;
+    margin-top: 40px;
+}
+.ourstaff{
+    width: 95%;
+    margin: auto;
+    height: 600px;
+    padding-top: 20px;
+    overflow: hidden;
+}
+.ourstaff .top{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-left h1{
+    margin: 10px 30px;
+    font-family: semibold;
+    color: white;
+}
+.top-right{
+    position: relative;
+    width: 20%;
+}
+.top-right .button{
+    width: 200px;
+    height: 40px;
+    z-index: 2;
+   position: absolute;
+   top: -20px;
+   left: 30px;
+}
+.top-right .button-back{
+    width: 100px;
+    height: 40px;
+    background-color: #e42023;
+    transition: all;
+    transition-duration: 0.3s;
+    position: absolute;
+    top: -20px;
+    left: 30px;
+    box-shadow: 2px 2px 2px #1c1c1c;
+    border-radius: 3px;
+}
+.top-right a{
+    font-family: regular;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+top: -18px;
+left: 56px;
+}
+.top-right .button:hover~.button-back
+{
+    width: 210px;
+}
+.ourstaff .cards{
+    width: 100%;
+    height: 90%;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.ourstaff .cards .card1{
+    width: 30%;
+    height: 100%;
+}
+.ourstaff .cards .card1 .image{
+    width: 100%;
+    height: 75%;
+    background-color: #1c1c1c;
+overflow: hidden;
+}
+.ourstaff .cards .card1 .image img{
+    margin-top: -100px;
+    margin-left: -150px;
+}
+.ourstaff .cards .card1 .content{
+    height: 25%;
+    width: 100%;
+}
+.ourstaff .cards .card2{
+    width: 30%;
+    height:100%;
+}
+.ourstaff .cards .card2 .image{
+    width: 100%;
+    height: 75%;
+    background-color: #1c1c1c;
+overflow: hidden;
+}
+.ourstaff .cards .card2 .image img{
+    margin-top: 60px;
+    margin-left: -60px;
+}
+.ourstaff .cards .card2 .content{
+    height: 25%;
+    width: 100%;    
+  
+}
+.ourstaff .cards .card3{
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+}
+.ourstaff .cards .card3 .image{
+    width: 100%;
+    height: 75%;
+    background-color: #1c1c1c;
+overflow: hidden;
+}
+.ourstaff .cards .card3 .image img{
+    margin-top:30px;
+    margin-left: -60px;
+}
+.ourstaff .cards .card3 .content{
+    height: 25%;
+    width: 100%;
+}
+.content h2,p{
+    font-family: medium;
+    text-align: center;
+    color: white;
+}
+.content h2{
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.content .bar{
+    height: 5px;
+    width: 80%;
+    background-color: #e42023;
+    margin: auto;
+    margin-top: 20px;
+}
+.gallery{
+    width: 95%;
+    margin: auto;
+    height: 360px;
+}
+.gallery .top{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.gallery .top h1{
+    font-family: semibold;
+    color: white;
+    margin: 0px 30px;
+}
+.gallery .image{
+    width: 100%;
+    height:300px;
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gallery .image img{
+    width: 380px;
+}
+.gallery .image .right-arrow{
+    background-color: #e42023;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 13px;
+    font-size: 25px;
+    border-radius: 100%;
+    color: white;
+}
+.whatwedo{
+    width: 95%;
+    margin: auto;
+    height: 520px;
+}
+.whatwedo .top-section{
+    height: fit-content;
+    width: 90%;
+    margin:20px 30px;
+    font-family: semibold;
+    color: white;
+}
+.whatwedo .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.whatwedo .content .left{
+    height: 440px;
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.whatwedo .content .image{
+    width: 35%;
+    height: 440px;
+
+
+}
+.whatwedo .content .image img{
+    height: 450px;
+    margin-left: 30px;
+    margin-top: -40px;
+}
+.whatwedo .tatooing{
+    width: 47%;
+    height: 50%;
+  
+}
+.whatwedo .tatooing img{
+    width: 52px;
+    height: 52px;
+}
+.whatwedo .tatooing .top{
+    height: 30px;
+    width:43%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.whatwedo .tatooing .content p{
+font-size: 12px;
+font-family: regular;
+margin-top:10px;
+text-align: left;
+}
+.whatwedo .tatooing .top h2{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.whatwedo .piercing{
+    width: 47%;
+    height: 50%;
+  
+}
+.whatwedo .piercing img{
+    width: 45px;
+    height: 45px;
+}
+.whatwedo .piercing .top{
+    height: 30px;
+    width:38%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.whatwedo .piercing .content p{
+font-size: 12px;
+font-family: regular;
+margin-top: 10px;
+text-align: left;
+}
+.whatwedo .piercing .top h2{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.whatwedo .coverup{
+    width: 47%;
+    height: 50%;
+  
+}
+.whatwedo .coverup img{
+    width: 50px;
+    height: 50px;
+}
+.whatwedo .coverup .top{
+    height: 30px;
+    width:40%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.whatwedo .coverup .content p{
+font-size: 12px;
+font-family: regular;
+margin-top: 10px;
+text-align: left;
+}
+.whatwedo .coverup .top h2{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.whatwedo .design{
+    width: 47%;
+    height: 50%;
+  
+}
+.whatwedo .design img{
+    width: 50px;
+    height: 50px;
+}
+.whatwedo .design .top{
+    height: 30px;
+    width:35%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+.whatwedo .design .top h2{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.whatwedo .design .content p{
+font-size: 12px;
+font-family: regular;
+margin-top: 10px;
+text-align: left;
+}
+.whatwedo p{
+    opacity: 90%;
+}
+.testimonial{
+    width: 95%;
+    margin: auto;
+    height: 400px;
+}
+.testimonial h1{
+    font-family: semibold;
+    color: white;
+    width: fit-content;
+    padding: 0px 30px;
+}
+.testimonial p{
+    width: 65%;
+    text-align: left;
+    margin: 10px 30px;
+
+}
+.testimonial .bar{
+    width: 67%;
+    height: 3px;
+    background-color: #e42023;
+    margin: 0px 20px;
+    float: left;
+    margin-top: 10;
+}
+.testimonial h4{
+    color: white;
+float: right;
+width: 40%;
+font-family: regular;
+letter-spacing: 2px;
+}
+.testimonial p::before{
+content: "'' ";
+color: #e42023;
+font-size: 40px;
+}
+.getintouch{
+    width: 95%;
+    margin: auto;
+    height: 450px;
+    display: flex;
+    margin-top: 20px;
+}
+.getintouch .left{
+    width: 35%;
+    height: 100%;
+    overflow: hidden;
+}
+.getintouch .left img{
+    margin-left: 70px;
+}
+.getintouch .right{
+    width: 65%;
+    height: 100%;
+}
+.getintouch .right h1{
+    font-family: semibold;
+    color: white;
+    text-align: center;
+}
+.getintouch .right p{
+    font-family: regular;
+    text-align: center;
+    width: 80%;
+padding: 20px 0px;
+    margin: 0px auto;
+
+}
+.getintouch form{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+justify-content: space-between;
+}
+input{
+    height: 25px;
+    background-color: transparent;
+    border: solid 2px white;
+    opacity: 60%;
+    color: white;
+    font-family: regular;
+    letter-spacing: 2px;
+}
+::placeholder{
+    color: white;
+    font-family: regular;
+    padding-left: 20px;
+    opacity: 60%;
+}
+input:nth-of-type(4){
+    height: 80px;
+}
+.getintouch .button{
+
+    height: 40px;
+    width: 220px;
+    margin-left: 210px;
+    margin-top: 20px;
+    position: absolute;
+
+
+    
+}
+.getintouch .button-back{
+    background-color: #e42023;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    transition: all;
+transition-duration: 0.3s;
+position: absolute;
+box-shadow: 2px 2px 2px #1c1c1c;
+    border-radius: 3px;
+
+}
+.getintouch .button a{
+    color: white;
+    font-family: regular;
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 20px;
+    position: absolute;
+    top: 0px;
+    width: fit-content;
+
+}
+.getintouch .button:hover .button-back{
+    width: 220px;
+}
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: #1c1c1c;
+}
+footer .first{
+    width: 95%;
+    margin: auto;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-family: regular;
+    align-items: center;
+    opacity: 70%;
+}
+footer .second{
+    width: 95%;
+    margin: auto;
+color: white;
+font-family: regular;
+display: flex;
+align-items: center;
+font-size: 12px;
+opacity: 70%;
+}
+footer p:hover{
+    color: #e42023;
+}
+.gallery .image .viewmore
+{
+    display: none;
+}
+.getintouch  .viewmore{
+    display: none;
+    margin: 0px auto;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+.getintouch  .viewmore a{
+   background-color: #e42023;
+    text-decoration: none;
+    color: white;
+    padding: 7px 10px;
+    font-size: 15px;
+    font-family: regular;
+    border-radius: 5px;
+    width: 100%;
+    display: none;
+    
+}
+.gototop{
+    display: none;
+}
+@media  screen and (max-width:480px) {
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+.header{
+   width: 100%;
+    height: 50px;
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    position: fixed;
+   top: 0;
+   box-shadow: 0px 1px 5px #302f2f;
+}
+.gototop{
+    display: block;
+    z-index: 3;
+border-radius: 1%;
+background-color: blue;
+}
+.gototop a{
+    opacity: 50%;
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    font-size: 20px;
+    color: white;
+    z-index: 3;
+    padding: 5px 10px;
+    border-radius: 100%;
+    background-color: red;
+}
+.gototop a:hover{
+opacity: 100%;
+}
+.logo{
+  margin-left: 10px;
+  width: fit-content;
+}
+.logo h1{
+    color: #e42023;
+    font-family: semibold;
+    width: fit-content;
+    font-size: 20px;
+}
+.menubar{
+    display: block;
+    color: white;
+    width: fit-content;
+font-size: 20px;
+margin-right: 20px;
+}
+
+.header .navbar{
+    display: none;
+}
+.banner{
+    background-image: url(images/mobilebanner.jpg);
+    width: 100%;
+    margin-top: 49px;
+    height: 750px;
+    background-size: cover;
+    position: relative;
+}
+.banner h1{
+    color: #e42023;
+    font-family: semibold;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 60px;
+}
+.banner p{
+    color: white;
+    font-family: medium;
+    position: absolute;
+    top: 120px;
+    left: 55px;
+    width: fit-content;
+    font-size: 38px;
+    text-transform: uppercase;
+}
+.banner .button{
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    top: 300px;
+    left: 180px;
+    z-index: 1;
+    display: none;
+}
+.banner .button-back{
+    width: 100px;
+    height: 50px;
+    background-color: #e42023;
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    transition: all;
+    transition-duration: 0.3s;
+    box-shadow: 2px 2px 2px #1c1c1c;
+    border-radius: 3px;
+    display: none;
+}
+.banner a{
+    font-family: regular;
+    color: white;
+    font-size: 20px;
+    background-color: #e42023;
+    padding: 7px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    position: absolute;
+    top: 200px;
+    left: 120px;
+    width: fit-content;
+    display: block;
+}
+.banner a:hover{
+    background-color: white;
+    color: #e42023;
+}
+.about{
+    width: 95%;
+    margin: auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+.about .about-left{
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+.about .about-right{
+    width: 100%;
+    height: 100%;
+    margin-left: 0px;
+}
+.about .about-left h1{
+    font-family: semibold;
+    color: white;
+    margin: 10px 10px;
+    font-size: 20px;
+}
+.about .about-left .image{
+    width: 100%;
+    height: 100%;
+ 
+   display: flex;
+   justify-content: space-between;
+}
+.about .about-left .image .image1{
+    width: 49%;
+    height: 100%;
+    background-color: #1c1c1c;
+    overflow: hidden;
+}
+.about .about-left .image .image1 img{
+margin-left: -40px;
+}
+.about .about-left .image .image2{
+    width: 49%;
+    height: 100%;
+    background-color: #1c1c1c;
+    overflow: hidden;
+}
+.about .about-left .image .image2 img{
+margin-left: -130px;
+
+}
+.about .about-right p:nth-of-type(1){
+    margin: 0px 0px 0px 0px;
+    font-family: medium;
+    opacity: 100%;
+    color: white;
+text-align: left;   
+margin-bottom: 20px;
+}
+.about .about-right p{
+    font-family: medium;
+    opacity: 80%;
+    color: white;
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 0px;
+}
+.about .about-right .bar{
+    width: 80%;
+    height: 3px;
+    background-color: #e42023;
+    margin: auto;
+    margin-top: 20px;
+}
+.ourstaff{
+    width: 95%;
+    margin: auto;
+    height: fit-content;
+    padding-top: 50px;
+    overflow: hidden;
+}
+.ourstaff .top{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-left h1{
+    margin: 0px 10px;
+    font-family: semibold;
+    color: white;
+    font-size: 20px;
+}
+.top-right{
+    position: relative;
+    width: 35%;
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+.top-right .button{
+   display: none;
+}
+.top-right .button-back{
+    width: 100px;
+    height: 30px;
+    background-color: #e42023;
+    transition: all;
+    transition-duration: 0.3s;
+position: absolute;
+top:10px;
+left: 20px;
+    box-shadow: 2px 2px 2px #1c1c1c;
+    border-radius: 3px;
+}
+.top-right a{
+    font-family: regular;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    z-index: 2;
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    width: 100px;
+    text-align: center;
+
+}
+.top-right .button-back:hover{
+    background-color: white;
+}
+.top-right .button-back:hover + .top-right a{
+    color: #e42023;
+}
+
+.top-right .button:hover~.button-back
+{
+    width: 210px;
+}
+.ourstaff .cards{
+    width: 70%;
+    height: fit-content;
+   
+    margin: 20px 0px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ourstaff .cards .card1{
+    width: 100%;
+    height: 300px;
+}
+.ourstaff .cards .card1 .image{
+    width: 100%;
+    height: 75%;
+    background-color: #1c1c1c;
+overflow: hidden;
+}
+.ourstaff .cards .card1 .image img{
+    margin-top: -70px;
+    margin-left: -50px;
+   width: 400px;
+   animation: move1;
+   animation-duration: 30s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+@keyframes move1 {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-50px);
+    }
+}
+.ourstaff .cards .card1 .content{
+    height: 25%;
+    width: 100%;
+}
+.ourstaff .cards .card2{
+    width: 100%;
+    height:300px;
+}
+.ourstaff .cards .card2 .image{
+    width: 100%;
+    height: 75%;
+    background-color: #1c1c1c;
+overflow: hidden;
+}
+.ourstaff .cards .card2 .image img{
+    margin-top: 10px;
+    margin-left: -40px;
+    width: 400px;
+    animation: move2;
+    animation-duration: 30s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+@keyframes move2 {
+    from{
+        transform: translateX(-50px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+.ourstaff .cards .card2 .content{
+    height: 25%;
+    width: 100%;    
+  
+}
+.ourstaff .cards .card3{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.ourstaff .cards .card3 .image{
+    width: 100%;
+    height: 75%;
+    background-color: #1c1c1c;
+overflow: hidden;
+}
+.ourstaff .cards .card3 .image img{
+    margin-top:0px;
+    margin-left: -10px;
+    width: 300px;
+    animation: move3;
+    animation-duration: 30s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+@keyframes move3 {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-50px);
+    }
+}
+.ourstaff .cards .card3 .content{
+    height: 25%;
+    width: 100%;
+}
+.content h2,p{
+    font-family: medium;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+}
+.content h2{
+    letter-spacing: 1px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.content .bar{
+    height: 3px;
+    width: 80%;
+    background-color: #e42023;
+    margin: auto;
+    margin-top: 5px;
+}
+.gallery{
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+    height: fit-content;
+}
+.gallery .top{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.gallery .top h1{
+    font-family: semibold;
+    color: white;
+    margin: 0px 10px;
+    font-size: 20px;
+}
+.gallery .image{
+    width: 100%;
+    height:fit-content;
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.gallery .image img{
+    width: 300px;
+}
+.gallery .image .right-arrow{
+  display: none;
+}
+.gallery .image .viewmore{
+    display: block;
+}
+.gallery .image .viewmore a{
+   background-color: #e42023;
+    text-decoration: none;
+    color: white;
+    padding: 7px 10px;
+    font-size: 15px;
+    font-family: regular;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+}
+.whatwedo{
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+    height: fit-content;
+}
+.whatwedo .top-section{
+    height: fit-content;
+    width: 90%;
+    margin:20px 10px;
+    font-family: semibold;
+    color: white;
+}
+.whatwedo .top-section h1{
+    font-size: 20px;
+}
+.whatwedo .content{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.whatwedo .content .left{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-content: space-between;
+order: 2;
+}
+.whatwedo .content .image{
+    width: 35%;
+    height: fit-content;
+    order: 1;
+
+
+}
+.whatwedo .content .image img{
+    height: 300px;
+    margin-left: 50px;
+    margin-top: -20px;
+    animation-name: skew;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes skew{
+   0%{
+    transform: none;
+   }
+   100%{
+    transform: skew(0.5deg,0deg);
+   }
+}
+.whatwedo .tatooing{
+    width: 100%;
+    height: 100%;
+  
+}
+.whatwedo .tatooing img{
+    width: 52px;
+    height: 52px;
+}
+.whatwedo .tatooing .top{
+    height: 30px;
+    width:48%;
+    margin: 0px auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.whatwedo .tatooing .content p{
+font-size: 12px;
+font-family: regular;
+margin-top:10px;
+text-align: left;
+}
+.whatwedo .tatooing .top h2{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.whatwedo .piercing{
+    width: 100%;
+    height: 100%;
+  
+}
+.whatwedo .piercing img{
+    width: 40px;
+    height: 40px;
+}
+.whatwedo .piercing .top{
+    height: 30px;
+    width:41%;
+    margin: 0px auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.whatwedo .piercing .content p{
+font-size: 12px;
+font-family: regular;
+margin-top: 10px;
+text-align: left;
+}
+.whatwedo .piercing .top h2{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.whatwedo .coverup{
+    width: 100%;
+    height: 100%;
+  
+}
+.whatwedo .coverup img{
+    width: 50px;
+    height: 50px;
+}
+.whatwedo .coverup .top{
+    height: 30px;
+    width:44%;
+    margin: 0px auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.whatwedo .coverup .content p{
+font-size: 12px;
+font-family: regular;
+margin-top: 10px;
+text-align: left;
+}
+.whatwedo .coverup .top h2{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.whatwedo .design{
+    width: 100%;
+    height: 100%;
+  
+}
+.whatwedo .design img{
+    width: 50px;
+    height: 50px;
+}
+.whatwedo .design .top{
+    height: 30px;
+    width:38%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+
+}
+.whatwedo .design .top h2{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.whatwedo .design .content p{
+font-size: 12px;
+font-family: regular;
+margin-top: 10px;
+text-align: left;
+}
+.whatwedo p{
+    opacity: 90%;
+}
+.testimonial{
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+    height: fit-content;
+}
+.testimonial h1{
+    font-family: semibold;
+    color: white;
+    width: fit-content;
+    padding: 0px 10px;
+    font-size: 20px;
+}
+.testimonial p{
+    width: 100%;
+    text-align: left;
+    margin: 10px 0px;
+    letter-spacing: 0px;
+    font-size: 12px;
+
+}
+.testimonial .bar{
+    width: 67%;
+    height: 3px;
+    background-color: #e42023;
+    margin: 0px auto;
+    float: none;
+    margin-top: 40px;
+   
+}
+.testimonial h4{
+    color: white;
+float: right;
+width: 40%;
+font-family: regular;
+letter-spacing: 2px;
+font-size: 13px;
+font-family: regular;
+}
+.testimonial p::before{
+content: "'' ";
+color: #e42023;
+font-size: 40px;
+letter-spacing: 0px;
+}
+.getintouch{
+    width: 95%;
+    margin: auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.getintouch .left{
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+}
+.getintouch .left img{
+    margin-left: 70px;
+    width: 250px;
+    animation-name: skew;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.getintouch .right{
+    width: 100%;
+    height: fit-content;
+}
+.getintouch .right h1{
+    font-family: semibold;
+    color: white;
+    text-align: center;
+}
+.getintouch .right p{
+    font-family: regular;
+    text-align: center;
+    width: 90%;
+padding: 0px 0px;
+    margin: 0px auto;
+    font-size: 12px;
+
+}
+.getintouch form{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height:280px;
+    margin-top: 20px;
+justify-content: space-between;
+}
+input{
+    height: 25px;
+    background-color: transparent;
+    border: solid 2px white;
+    opacity: 60%;
+    color: white;
+    font-family: regular;
+    letter-spacing: 2px;
+}
+::placeholder{
+    color: white;
+    font-family: regular;
+    padding-left: 20px;
+    opacity: 60%;
+}
+input:nth-of-type(4){
+    height: 80px;
+}
+.getintouch .button{
+
+    height: 40px;
+    width: 220px;
+    margin-left: 0px;
+    margin-top: 20px;
+    position: absolute;
+    display: none;
+
+
+    
+}
+.getintouch .button-back{
+    background-color: #e42023;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    transition: all;
+transition-duration: 0.3s;
+position: absolute;
+box-shadow: 2px 2px 2px #1c1c1c;
+    border-radius: 3px;
+    display: none;
+
+}
+.getintouch .button a{
+    color: white;
+    font-family: regular;
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 20px;
+    position: none;
+    top: 0px;
+    width: fit-content;
+display: none;
+}
+.getintouch .button:hover .button-back{
+    width: 220px;
+    display: none;
+}
+.getintouch  .viewmore{
+    display: block;
+    margin: 0px auto;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+.getintouch  .viewmore a{
+   background-color: #e42023;
+    text-decoration: none;
+    color: white;
+    padding: 7px 10px;
+    font-size: 15px;
+    box-shadow: 2px 2px 5px black;
+    font-family: regular;
+    border-radius: 5px;
+    width: fit-content;
+    display: block;
+}
+footer{
+    width: 100%;
+    height: fit-content;
+    background-color: #1c1c1c;
+    padding: 10px 0px;
+}
+footer .first{
+    width: 95%;
+    margin: 0px auto;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-family: regular;
+    opacity: 70%;
+}
+footer .second{
+    width: 95%;
+    margin: auto;
+padding-top: 10px;
+color: white;
+font-family: regular;
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+align-items: center;
+font-size: 12px;
+opacity: 70%;
+}
+footer p{
+    width: 70%;
+    margin: 0px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
